@@ -3,6 +3,7 @@ mkdir tna
 cd tna
 npm init -y
 touch index.js
+touch .gitignore
 # tna/package.json
     "start": "node index.js"
 # tna/index.js 
@@ -29,3 +30,14 @@ app.listen(3000)
 ## STEP 3
 npm i dotenv
 touch .env
+--
+require("dotenv").config()
+const PORT = process.env.PORT
+const express = require('express')
+const app = express()
+app.get("/",(req,res)=>{
+    res.send("<h1>Good</h1>")
+})
+app.listen(PORT)
+--
+## STEP 5
