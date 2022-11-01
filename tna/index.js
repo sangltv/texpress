@@ -1,6 +1,6 @@
-const http = require('http')
-const server = http.createServer((req,res)=>{
-    res.write("HI NODEJS")
-    res.end()
+const express = require('express')
+const app = express()
+app.get("/",(req,res)=>{
+    res.send("<h1>Good</h1>")
 })
-server.listen(3000)
+app.listen(3000)
