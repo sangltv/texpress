@@ -27,3 +27,5 @@ app.get("/",(req,res)=>{
 })
 app.listen(3000)
 ## STEP 3
+npm i dotenv
+touch .env
