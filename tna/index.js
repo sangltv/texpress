@@ -26,10 +26,13 @@ const data = {
         }
     ]
 }
-app.get("/",(req,res)=>{
-    res.json("Main")
-})
+
 app.get("/posts",(req,res)=>{
     res.json(data.posts)
 })
+
+app.get("/posts/:id",(req,res)=>{
+    res.json(data.posts.filter(post => +req.params.id === post.id))
+})
+
 app.listen(PORT)
