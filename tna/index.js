@@ -20,7 +20,7 @@ app.use(express.json()) //json req.body
 
 app.get("/", (req, res)=>{
     console.log(`${req.body}`)
-    res.send(q.body)
+    res.send(req.body)
 })
 
 app.get("/posts",(req,res)=>{
