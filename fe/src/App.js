@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button} from './libs'
 
 function App() {
   return (
     <div className="App">
-      <h1>static posts</h1>
+      <Button variant="contained" bg="black">Click me</Button>
     </div>
   );
 }
