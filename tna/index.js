@@ -17,11 +17,7 @@ const data = {
     ]
 }
 app.use(express.json()) //json req.body
-
-app.get("/", (req, res)=>{
-    console.log(`${req.body}`)
-    res.send(req.body)
-})
+app.use(express.static("public"))
 
 app.get("/posts",(req,res)=>{
     res.json(data.posts)
