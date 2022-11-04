@@ -18,6 +18,8 @@ const data = {
 }
 app.use(express.json()) //json req.body
 
+
+
 app.get("/", (req, res)=>{
     console.log(`${req.body}`)
     res.send(req.body)
@@ -29,6 +31,10 @@ app.get("/posts",(req,res)=>{
 
 app.get("/posts/:id",(req, res)=>{
     res.json(data.posts.filter(post => +req.params.id === post.id))
+})
+
+app.get("*", (req, res)=>{
+    res.redirect("/")
 })
 
 app.listen(PORT)
