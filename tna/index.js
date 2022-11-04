@@ -18,8 +18,6 @@ const data = {
 }
 app.use(express.json()) //json req.body
 
-
-
 app.get("/", (req, res)=>{
     console.log(`${req.body}`)
     res.send(req.body)
