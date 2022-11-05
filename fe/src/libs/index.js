@@ -332,18 +332,18 @@ export const ToggleButton = props => <Mbox as={M.ToggleButton} {...props} />
 export const ToggleButtonGroup = props => <Mbox as={M.ToggleButtonGroup} {...props} />
 export const Toolbar = props => <Mbox as={M.Toolbar} {...props} />
 export const Tooltip = props => <Mbox as={M.Tooltip} {...props} />
-// export const Typography = props => <Mbox as={M.Typography} {...props} />
+export const Typography = props => <Mbox as={M.Typography} {...props} />
 export const Unstable_Grid2 = props => <Mbox as={M.Unstable_Grid2} {...props} />
 export const Unstable_TrapFocus = props => <Mbox as={M.Unstable_TrapFocus} {...props} />
 export const Zoom = props => <Mbox as={M.Zoom} {...props} />
 //wait edit
-export const P = props => <Mbox as={M.Typography} {...props} />
-export const H1 = props => <Mbox as={M.Typography} variant="H1" {...props} />
-export const H2 = props => <Mbox as={M.Typography} variant="H2" {...props} />
-export const H3 = props => <Mbox as={M.Typography} variant="H3" {...props} />
-export const H4 = props => <Mbox as={M.Typography} variant="H4" {...props} />
-export const H5 = props => <Mbox as={M.Typography} variant="H5" {...props} />
-export const H6 = props => <Mbox as={M.Typography} variant="H6" {...props} />
+export const P = props => <Mbox as={M.Typography} variant="body1" {...props} />
+export const H1 = props => <Mbox as={M.Typography} variant="h1" {...props} />
+export const H2 = props => <Mbox as={M.Typography} variant="h2" {...props} />
+export const H3 = props => <Mbox as={M.Typography} variant="h3" {...props} />
+export const H4 = props => <Mbox as={M.Typography} variant="h4" {...props} />
+export const H5 = props => <Mbox as={M.Typography} variant="h5" {...props} />
+export const H6 = props => <Mbox as={M.Typography} variant="h6" {...props} />
 
 export const A = props => <Box as={'a'} {...props} />
 export const Abbr = props => <Box as={'abbr'} {...props} />
