@@ -1,5 +1,11 @@
-#GET http://localhost:3001/posts
+POST  http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+    "username":"long",
+    "password":"1234"
+}
 
 #GET http://localhost:3001/posts/1
 
-GET http://localhost:3001/others
+#GET http://localhost:3001/others

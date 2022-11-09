@@ -1,26 +1,15 @@
 require("dotenv").config()
 const PORT = process.env.PORT
-const express = require('express')
+import express from "express"
 const app = express()
-const data = {
-    posts: [
-        {
-            id: 0,
-            text: "Blap blap",
-            user: "sanglq"
-        },
-        {
-            id: 1,
-            text: "Wow - Squid",
-            user: "namnd"
-        }
-    ]
-}
+import db from "./db"
+import userRouter from './routes/users'
 app.use(express.json()) //json req.body
 app.use(express.static("public"))
 
+app.use("/users",userRouter)
 app.get("/posts",(req,res)=>{
-    res.json(data.posts)
+    res.json(db.posts)
 })
 
 app.get("/posts/:id",(req, res)=>{
