@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <H4 color="red">Users</H4>
       {
-        data.map(item => <Div>
+        data.map((item,index) => <Div key={index}>
           <P>{item.text}</P>
         </Div>)
       }
