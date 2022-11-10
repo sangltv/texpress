@@ -1,4 +1,16 @@
 {
-    "users":[],
-    "posts":[]
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$GxmE9b71lfGg6gigjThcsOnOaGIgtqwtzn/2YhOa/l/l15Uj0jceq",
+      "id": 1
+    },
+    {
+      "email": "olivier1@mail.com",
+      "password": "$2a$10$CKX0tOC5d6pqkH0Fgn2DVOlBspRhlGksciluChcqbliwNAQItREBW",
+      "username": "oliver1",
+      "id": 2
+    }
+  ],
+  "posts": []
 }
