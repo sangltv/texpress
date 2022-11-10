@@ -4,7 +4,7 @@ import axios from 'axios'
 import useSWR from 'swr'
 const fetcher = url => axios.get(url).then(r => r.data)
 function App() {
-  const {data,error} = useSWR("https://3001-sangltv-texpress-2lb3h358kn3.ws-us75.gitpod.io/posts", fetcher)
+  const {data,error} = useSWR("/posts", fetcher)
   if (error) return <P color="red">Error:{error.message}</P>
   if (!data) return <P>Loading...</P>
   console.log(data)
@@ -16,7 +16,11 @@ function App() {
           <P>{item.text}</P>
         </Div>)
       }
-      <Button variant="contained" bg="black">Click me</Button>
+      <Button onClick={()=>{
+        axios.post("/users/login",{
+          username:"long",password:"123"
+        })
+      }} variant="contained" bg="black">Click me</Button>
       <P>Nice</P>
     </div>
   );

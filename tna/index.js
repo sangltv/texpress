@@ -1,11 +1,11 @@
 require("dotenv").config()
-import cors from 'cors'
+// import cors from 'cors'
 const PORT = process.env.PORT
 import express from "express"
 const app = express()
 import db from "./db"
 import userRouter from './routes/users'
-app.use(cors())
+// app.use(cors())
 app.use(express.json()) //json req.body
 app.use(express.static("public"))
 
