@@ -20,3 +20,15 @@ Content-Type: application/json
 
 GET http://localhost:3000/products
 
+###
+
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImlhdCI6MTY2ODA5MjAwNSwiZXhwIjoxNjY4MDkyOTA1fQ.7HeIOL-cdl4PMCdi_5tzwDwaMqHI1JKiCIAXlXuLpQU
+###
+POST  http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password": "admin"
+}
